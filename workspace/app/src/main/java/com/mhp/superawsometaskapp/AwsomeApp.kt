@@ -1,4 +1,4 @@
-package com.mhp
+package com.mhp.superawsometaskapp
 
 import android.app.Application
 import android.util.Log

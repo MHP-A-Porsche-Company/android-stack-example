@@ -5,7 +5,7 @@ import android.support.v7.util.DiffUtil
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.mhp.AwsomeApp
+import com.mhp.superawsometaskapp.AwsomeApp
 import com.mhp.superawsometaskapp.model.ListItem
 import com.mhp.superawsometaskapp.view.ListItemView
 import com.mhp.superawsometaskapp.view.ListItemView_

@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
-        android:background="@color/colorAccent"
+        android:background="@drawable/accent_color_ripple"
         android:text="@string/save"
         android:textColor="@color/white"/>
 

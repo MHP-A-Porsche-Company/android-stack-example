@@ -1,9 +1,10 @@
 package com.mhp.superawsometaskapp.injection
 
 import android.content.Context
-import com.mhp.AwsomeApp
+import com.mhp.superawsometaskapp.AwsomeApp
 import com.mhp.superawsometaskapp.service.DefaultListItemService
 import com.mhp.superawsometaskapp.service.ListItemService
+import com.mhp.superawsometaskapp.viewmodel.*
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -27,5 +28,20 @@ class AwsomeModule {
     @Singleton
     internal fun provideListItemService(): ListItemService {
         return DefaultListItemService()
+    }
+
+    @Provides
+    internal fun provideCreateItemViewModel(listItemService: ListItemService): CreateItemViewModel {
+        return DefaultCreateItemViewModel(listItemService)
+    }
+
+    @Provides
+    internal fun provideListViewModel(listItemService: ListItemService): ListViewModel {
+        return DefaultListViewModel(listItemService)
+    }
+
+    @Provides
+    internal fun provideEditItemViewModel(listItemService: ListItemService): EditItemViewModel {
+        return DefaultEditItemViewModel(listItemService)
     }
 }

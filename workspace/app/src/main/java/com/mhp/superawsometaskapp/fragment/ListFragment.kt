@@ -3,7 +3,7 @@ package com.mhp.superawsometaskapp.fragment
 import android.support.v4.app.Fragment
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import com.mhp.AwsomeApp
+import com.mhp.superawsometaskapp.AwsomeApp
 import com.mhp.superawsometaskapp.R
 import com.mhp.superawsometaskapp.adapter.ListItemAdapter
 import com.mhp.superawsometaskapp.view.ListItemView

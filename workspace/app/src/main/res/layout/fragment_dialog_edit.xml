@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/accent_color_ripple"
             android:text="@string/delete"
             android:textColor="@color/white"/>
 
@@ -38,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorAccent"
+            android:background="@drawable/main_color_ripple"
             android:text="@string/save"
             android:textColor="@color/white"/>
     </LinearLayout>

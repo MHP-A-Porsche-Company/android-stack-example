@@ -3,9 +3,10 @@ package com.mhp.superawsometaskapp.fragment
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import android.widget.EditText
-import com.mhp.AwsomeApp
+import com.mhp.superawsometaskapp.AwsomeApp
 import com.mhp.superawsometaskapp.R
 import com.mhp.superawsometaskapp.viewmodel.CreateItemViewModel
+import com.mhp.superawsometaskapp.viewmodel.DefaultCreateItemViewModel
 import org.androidannotations.annotations.AfterViews
 import org.androidannotations.annotations.Click
 import org.androidannotations.annotations.EFragment
@@ -15,7 +16,7 @@ import javax.inject.Inject
 /**
  * An implementation of [DialogFragment] to allow the user to create a new item of
  * [com.mhp.superawsometaskapp.model.ListItem]. The fragment uses an instance of
- * [CreateItemViewModel] to control the business logic using [io.reactivex.Observable]s.
+ * [DefaultCreateItemViewModel] to control the business logic using [io.reactivex.Observable]s.
  */
 @EFragment(R.layout.fragment_dialog_create)
 open class CreateItemDialogFragment : DialogFragment() {

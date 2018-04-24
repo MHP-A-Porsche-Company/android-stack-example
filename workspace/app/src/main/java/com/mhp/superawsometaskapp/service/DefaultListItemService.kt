@@ -2,6 +2,7 @@ package com.mhp.superawsometaskapp.service
 
 import com.mhp.superawsometaskapp.model.ListItem
 import io.reactivex.subjects.BehaviorSubject
+import java.util.*
 
 /**
  * A simple DAO service that can manage instances of [ListItem]. For the sake of simplicity the
@@ -38,6 +39,13 @@ class DefaultListItemService : ListItemService {
     }
 
     init {
-        items.onNext(ArrayList())
+        items.onNext(arrayListOf(
+                ListItem(UUID.randomUUID().toString(), "Use Kotlin"),
+                ListItem(UUID.randomUUID().toString(), "Implement MVVM Pattern"),
+                ListItem(UUID.randomUUID().toString(), "Use Android Annotations"),
+                ListItem(UUID.randomUUID().toString(), "Use Reactive Programming"),
+                ListItem(UUID.randomUUID().toString(), "Implement against Interfaces"),
+                ListItem(UUID.randomUUID().toString(), "Use Dependency Injection")
+        ))
     }
 }
